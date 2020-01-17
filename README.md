@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Hello I'm Hai
+
+Welcome everyone, this is the code my portfolio website. 
+Feel free to look at the code, and visit the website at [Hello I'm Hai](https://helloimhai.github.io/)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -62,6 +67,11 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+git checkout source
+git merge master
+git push origin source
+yarn deploy
 
 ### `yarn build` fails to minify
 
