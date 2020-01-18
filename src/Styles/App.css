@@ -89,6 +89,20 @@
 .container-2 .container-inner .description {
   line-height: 1.7;
 }
+.container-2 .hobby-item {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 70%;
+}
+.container-2 .hobby-item .hobby-icon {
+  font-size: 30px;
+}
 .container-2 .arrow-down {
   margin-top: auto;
   font-size: 5vh;
