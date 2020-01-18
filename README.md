@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Hello I'm Hai
 
-Welcome everyone, this is the code my portfolio website. 
+Welcome everyone, this is the code my portfolio website.<br />
 Feel free to look at the code, and visit the website at [Hello I'm Hai](https://helloimhai.github.io/)
 
 ## Available Scripts
@@ -71,7 +71,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 git checkout source
 git merge master
 git push origin source
-yarn deploy
+yarn run deploy
 
 ### `yarn build` fails to minify
 
