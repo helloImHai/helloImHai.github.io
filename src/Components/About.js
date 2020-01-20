@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Container } from '@material-ui/core';
 import profilePic from "../Utils/profile.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown, faDumbbell, faSearch, faHammer } from '@fortawesome/free-solid-svg-icons'
+import ScrollButton from './ScrollButton.js';
+import { faDumbbell, faSearch, faHammer } from '@fortawesome/free-solid-svg-icons'
 
 class About extends Component {
   getSectionRef = el => {
@@ -49,7 +50,7 @@ class About extends Component {
             <h5>Gym</h5>
           </div>
         </div>
-        <FontAwesomeIcon className="arrow-down" icon={faArrowCircleDown} onClick={this.onButtonClick}/>
+        <ScrollButton handleButtonClick={this.onScrollButtonClick} />
       </Container>
     );
   }

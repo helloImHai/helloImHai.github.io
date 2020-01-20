@@ -1,14 +1,13 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import { Container } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown } from '@fortawesome/free-solid-svg-icons'
+import ScrollButton from './ScrollButton.js';
 
 class Intro extends Component {
   getSectionRef = el => {
     this.sectionRef = el;
   }
 
-  onButtonClick = e => {
+  onScrollButtonClick = e => {
     if (this.sectionRef) {
       window.scrollTo({
         top: this.sectionRef.scrollHeight,
@@ -30,7 +29,7 @@ class Intro extends Component {
             I like to build things and solve problems.
           </h2>
         </Container>
-        <FontAwesomeIcon className="arrow-down" icon={faArrowCircleDown} onClick={this.onButtonClick}/>
+        <ScrollButton handleButtonClick={this.onScrollButtonClick} />
       </Container>
     );
   }
