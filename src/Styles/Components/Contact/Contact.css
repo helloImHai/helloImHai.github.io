@@ -116,6 +116,7 @@
 .nav-bar {
   background-color: #f3a195;
   color: white;
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -130,7 +131,7 @@
 .container-3 {
   background-color: #EEE;
   color: #282C34;
-  padding-top: 3vh;
+  padding-top: 10vh;
   padding-bottom: 3vh;
   min-height: calc(100vh - 50px);
   overflow: hidden;
