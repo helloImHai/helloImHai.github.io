@@ -72,6 +72,9 @@
   flex-direction: column;
   align-items: center;
 }
+.container-2 strong {
+  color: #f3a195;
+}
 .container-2 .container-inner {
   display: flex;
   flex-direction: column;
@@ -125,7 +128,7 @@
   height: 50px;
 }
 .container-3 {
-  background-color: #9099A2;
+  background-color: #EEE;
   color: #282C34;
   padding-top: 3vh;
   padding-bottom: 3vh;
