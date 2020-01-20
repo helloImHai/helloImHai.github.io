@@ -7,8 +7,8 @@ export default class Contact extends Component {
   render() {
     return (
       <Container className="container-3" maxWidth="xl">
-        <Container className="container-inner" maxWidth="md">
-          <h1 className="greeting">
+        <Container maxWidth="md">
+          <h1>
             UNDER CONSTRUCTION
           </h1>
         </Container>
