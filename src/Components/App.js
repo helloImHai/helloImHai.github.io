@@ -3,13 +3,15 @@ import '../Styles/App.css';
 import Navbar from './Navbar.js';
 import Intro from './Intro.js';
 import About from './About.js';
+import Contact from './Contact.js';
 
 function App() {
   return (
     <div>
-      <Navbar/>
-      <Intro/>
-      <About/>
+      <Navbar />
+      <Intro />
+      <About />
+      <Contact />
     </div>
   );
 }

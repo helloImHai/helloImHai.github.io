@@ -10,10 +10,11 @@ class About extends Component {
     this.sectionRef = el;
   }
 
-  onButtonClick = e => {
+  onScrollButtonClick = e => {
+    console.log(this.sectionRef.scrollHeight + this.sectionRef.offsetTop);
     if (this.sectionRef) {
       window.scrollTo({
-        top: this.sectionRef.scrollHeight,
+        top: this.sectionRef.scrollHeight + this.sectionRef.offsetTop,
         behavior: 'smooth',
       });
     }

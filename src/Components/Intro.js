@@ -8,6 +8,7 @@ class Intro extends Component {
   }
 
   onScrollButtonClick = e => {
+    console.log(this.sectionRef.scrollHeight);
     if (this.sectionRef) {
       window.scrollTo({
         top: this.sectionRef.scrollHeight,

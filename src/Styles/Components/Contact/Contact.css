@@ -72,9 +72,6 @@
   flex-direction: column;
   align-items: center;
 }
-.container-2 strong {
-  color: #f3a195;
-}
 .container-2 .container-inner {
   display: flex;
   flex-direction: column;
@@ -126,4 +123,15 @@
   z-index: 1;
   width: 100%;
   height: 50px;
+}
+.container-3 {
+  background-color: #9099A2;
+  color: #282C34;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  min-height: calc(100vh - 50px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
