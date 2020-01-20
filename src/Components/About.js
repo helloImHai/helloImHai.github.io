@@ -5,9 +5,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleDown, faDumbbell, faSearch, faHammer } from '@fortawesome/free-solid-svg-icons'
 
 class About extends Component {
+  getSectionRef = el => {
+    this.sectionRef = el;
+  }
+
+  onButtonClick = e => {
+    if (this.sectionRef) {
+      window.scrollTo({
+        top: this.sectionRef.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
+  }
   render() {
     return (
-      <Container className="container-2" maxWidth="xl">
+      <Container className="container-2" maxWidth="xl" ref={this.getSectionRef}>
         <Container className="container-inner" maxWidth="md">
           <h2>About Me</h2>
           <img className="profile-pic" src={profilePic} alt="profile-pic" />
@@ -20,7 +32,7 @@ class About extends Component {
             <br /><br />
             When I am not coding I like kayaking, eating, and gymming. A weird hobby of mine is translating English songs
             into different languages.
-            <br /><br />
+            <br />
           </p>
         </Container>
         <div>
@@ -37,7 +49,7 @@ class About extends Component {
             <h5>Gym</h5>
           </div>
         </div>
-        <FontAwesomeIcon className="arrow-down" icon={faArrowCircleDown} />
+        <FontAwesomeIcon className="arrow-down" icon={faArrowCircleDown} onClick={this.onButtonClick}/>
       </Container>
     );
   }

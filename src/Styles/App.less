@@ -51,6 +51,8 @@
   background-color: @b0;
   color           : @b4;
   min-height      : calc(100vh - 50px);
+  padding-top     : 3vh;
+  padding-bottom  : 3vh;
   display         : flex;
   flex-direction  : column;
   align-items     : center;
@@ -78,7 +80,7 @@
   .arrow-down {
     margin-top    : auto;
     font-size     : 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
   }
 }
 
@@ -87,7 +89,7 @@
   color           : @b0;
   padding-top     : 3vh;
   padding-bottom  : 3vh;
-  min-height      : 100vh;
+  min-height      : calc(100vh - 50px);
   overflow        : hidden;
   display         : flex;
   flex-direction  : column;
@@ -136,12 +138,13 @@
   .arrow-down {
     margin-top    : auto;
     font-size     : 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 2vh;
   }
 }
 
 .nav-bar {
-  background-color: @p1;
+  background-color: @p0;
+  color: white;
 
   position: -webkit-sticky;
   position: sticky;

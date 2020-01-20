@@ -5,13 +5,13 @@ class Navbar extends Component {
   render() {
     return (
       <Breadcrumbs aria-label="breadcrumb" className="nav-bar">
-        <Link color="inherit" href="/">
+        <Link color="textPrimary" href="/">
           ABOUT
         </Link>
-        <Link color="inherit" href="/">
+        <Link color="textPrimary" href="/">
           EXPERIENCE
         </Link>
-        <Link color="inherit" href="/">
+        <Link color="textPrimary" href="/">
           SKILLS
         </Link>
       </Breadcrumbs>
