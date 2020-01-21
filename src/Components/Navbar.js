@@ -1,31 +1,31 @@
-import React, { Component } from 'react'
-import { Breadcrumbs, Link } from '@material-ui/core';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { Breadcrumbs, Link } from "@material-ui/core";
+import { connect } from "react-redux";
 
 const NAVBAR_SIZE = 50;
 
 class Navbar extends Component {
-  aboutClick = (e) => {
+  aboutClick = e => {
     e.preventDefault();
     window.scrollTo({
       top: this.props.aboutOffset - NAVBAR_SIZE,
-      behavior: 'smooth',
+      behavior: "smooth"
     });
-  }
-  experienceClick = (e) => {
+  };
+  experienceClick = e => {
     e.preventDefault();
     window.scrollTo({
       top: this.props.expOffset - NAVBAR_SIZE,
-      behavior: 'smooth',
+      behavior: "smooth"
     });
-  }
-  skillsClick = (e) => {
+  };
+  skillsClick = e => {
     e.preventDefault();
     window.scrollTo({
       top: this.props.skillsOffset - NAVBAR_SIZE,
-      behavior: 'smooth',
+      behavior: "smooth"
     });
-  }
+  };
 
   render() {
     return (
@@ -43,12 +43,12 @@ class Navbar extends Component {
     );
   }
 }
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     aboutOffset: state.navbar.about,
     expOffset: state.navbar.experience,
     skillsOffset: state.navbar.skills
-  }
-}
+  };
+};
 
-export default connect(mapStateToProps, null)(Navbar)
+export default connect(mapStateToProps, null)(Navbar);

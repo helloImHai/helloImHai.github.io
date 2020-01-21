@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import { Container } from '@material-ui/core';
-import ScrollButton from './ScrollButton.js';
+import React, { Component } from "react";
+import { Container } from "@material-ui/core";
+import ScrollButton from "./ScrollButton.js";
 
 class Intro extends Component {
   getSectionRef = el => {
     this.sectionRef = el;
-  }
+  };
 
   onScrollButtonClick = e => {
     console.log(this.sectionRef.scrollHeight);
     if (this.sectionRef) {
       window.scrollTo({
         top: this.sectionRef.scrollHeight,
-        behavior: 'smooth',
+        behavior: "smooth"
       });
     }
-  }
+  };
 
   render() {
     return (
