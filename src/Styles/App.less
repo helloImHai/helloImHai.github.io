@@ -42,6 +42,15 @@
   }
 }
 
+.arrow-down {
+  margin-top    : auto;
+  font-size     : 5vh;
+  padding-bottom: 2vh;
+}
+.arrow-down:hover{
+  cursor: pointer;
+}
+
 .container-1 {
   background-color: @b0;
   color           : @b4;
@@ -70,12 +79,6 @@
     .my-name {
       color: @p0;
     }
-  }
-
-  .arrow-down {
-    margin-top    : auto;
-    font-size     : 5vh;
-    padding-bottom: 2vh;
   }
 }
 
@@ -134,12 +137,6 @@
       font-size: 30px;
     }
   }
-
-  .arrow-down {
-    margin-top    : auto;
-    font-size     : 5vh;
-    padding-bottom: 2vh;
-  }
 }
 
 .nav-bar {
@@ -160,4 +157,25 @@
   z-index: 1;
   width  : 100%;
   height : @navbarSize;
+  .nav-bar-item {
+    color: @b0;
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+  }
+  .nav-bar-item:hover {
+    cursor: pointer;
+    color: white;
+  }
+  .nav-bar-item:active {
+    color: @p0;
+    box-shadow: 0 3px 3px -3px rgba(0,0,0,.7);
+    -webkit-transition: color 0s;
+    -moz-transition:    color 0s;
+    -ms-transition:     color 0s;
+    -o-transition:      color 0s;
+    transition:         color 0s;
+  }
 }

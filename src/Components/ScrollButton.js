@@ -1,33 +1,22 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class ScrollButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false
-    };
-  }
-  toggleHover = () => {
-    this.setState({ hover: !this.state.hover });
-  };
   render() {
-    var linkStyle;
-    if (this.state.hover) {
-      linkStyle = { cursor: "pointer" };
-    } else {
-      linkStyle = { cursor: "default" };
-    }
     return (
-      <FontAwesomeIcon
-        className="arrow-down"
-        style={linkStyle}
-        icon={faArrowCircleDown}
-        onMouseEnter={this.toggleHover}
-        onMouseLeave={this.toggleHover}
-        onClick={this.props.handleButtonClick}
-      />
+      <Link
+        activeClass="active"
+        className="arrow-down" 
+        to={this.props.to}
+        spy={true}
+        smooth={true}
+        offset={-50}
+        duration={500}
+      >
+        <FontAwesomeIcon icon={faArrowCircleDown} />
+      </Link>
     );
   }
 }

@@ -10,28 +10,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { connect } from "react-redux";
-import { updateHeightAbout } from "../actions/navbarActions";
 
 class About extends Component {
-  componentDidMount() {
-    this.props.updateHeightAbout(this.sectionRef.offsetTop);
-  }
-
-  getSectionRef = el => {
-    this.sectionRef = el;
-  };
-
-  onScrollButtonClick = e => {
-    if (this.sectionRef) {
-      window.scrollTo({
-        top: this.sectionRef.scrollHeight + this.sectionRef.offsetTop,
-        behavior: "smooth"
-      });
-    }
-  };
   render() {
     return (
-      <Container className="container-2" maxWidth="xl" ref={this.getSectionRef}>
+      <Container
+        className="container-2"
+        maxWidth="xl"
+        id="aboutSection"
+      >
         <Container className="container-inner" maxWidth="md">
           <h2>About Me</h2>
           <img className="profile-pic" src={profilePic} alt="profile-pic" />
@@ -76,16 +63,10 @@ class About extends Component {
             <h5>Gym</h5>
           </div>
         </div>
-        <ScrollButton handleButtonClick={this.onScrollButtonClick} />
+        <ScrollButton to="constructionSection" />
       </Container>
     );
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    updateHeightAbout: height => dispatch(updateHeightAbout(height))
-  };
-}
-
-export default connect(null, mapDispatchToProps)(About);
+export default connect(null, null)(About);
