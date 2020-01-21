@@ -12,7 +12,7 @@ export default class ScrollButton extends Component {
         to={this.props.to}
         spy={true}
         smooth={true}
-        offset={-50}
+        offset={-0}
         duration={500}
       >
         <FontAwesomeIcon icon={faArrowCircleDown} />

@@ -13,7 +13,8 @@ class Intro extends Component {
           </h1>
           <br />
           <h2 className="short-line">
-            I like to build things and solve problems.
+            I like to <strong className="desc-word">build things</strong>
+            {" and "}<strong className="desc-word">solve problems</strong>.
           </h2>
         </Container>
         <ScrollButton to="aboutSection" />

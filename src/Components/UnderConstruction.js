@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "@material-ui/core";
-import "../Styles/Components/Contact/Contact.css";
+import "../Styles/Components/UnderConstruction/UnderConstruction.css";
 
 import { connect } from "react-redux";
 

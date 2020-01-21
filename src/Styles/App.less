@@ -44,8 +44,9 @@
 
 .arrow-down {
   margin-top    : auto;
-  font-size     : 5vh;
+  font-size     : 4.5vh;
   padding-bottom: 2vh;
+  opacity: 50%;
 }
 .arrow-down:hover{
   cursor: pointer;
@@ -53,8 +54,8 @@
 
 .container-1 {
   background-color: @b0;
-  color           : @b4;
-  min-height      : calc(100vh - @navbarSize);
+  color           : @t0;
+  min-height      : calc(100vh - 0px);
   padding-top     : 3vh;
   padding-bottom  : 3vh;
   display         : flex;
@@ -77,8 +78,12 @@
     }
 
     .my-name {
-      color: @p0;
+      color: @c0;
     }
+
+    // .desc-word {
+    //   color: @p2;
+    // }
   }
 }
 
@@ -87,14 +92,17 @@
   color           : @b0;
   padding-top     : 3vh;
   padding-bottom  : 3vh;
-  min-height      : calc(100vh - @navbarSize);
+  min-height      : calc(100vh - 0px);
   overflow        : hidden;
   display         : flex;
   flex-direction  : column;
   align-items     : center;
 
-  strong {
+  h2 {
     color: @p0;
+  }
+  strong {
+    color: @p1;
   }
 
   .container-inner {
@@ -113,6 +121,7 @@
       border-radius: 100px;
       border-color : white;
       border-width : 2px;
+      box-shadow: 0px 0px 0px 5px rgba(0,0, 0, 0.8);
     }
 
     .description {
@@ -159,6 +168,8 @@
   height : @navbarSize;
   .nav-bar-item {
     color: @b0;
+    font-size: medium;
+    font-weight: 450;
     -webkit-transition: color 1s;
     -moz-transition:    color 1s;
     -ms-transition:     color 1s;

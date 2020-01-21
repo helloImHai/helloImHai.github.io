@@ -6,14 +6,16 @@ import Navbar from "./Navbar.js";
 import Intro from "./Intro.js";
 import About from "./About.js";
 import UnderConstruction from "./UnderConstruction.js";
+import Skills from "./Skills.js";
 
 function App() {
   return (
     <div>
       <Provider store={store}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Intro />
         <About />
+        <Skills />
         <UnderConstruction />
       </Provider>
     </div>

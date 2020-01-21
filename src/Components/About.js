@@ -21,8 +21,10 @@ class About extends Component {
       >
         <Container className="container-inner" maxWidth="md">
           <h2>About Me</h2>
+          <br/>
           <img className="profile-pic" src={profilePic} alt="profile-pic" />
           <p className="description">
+            <br/>
             Hello, my name is Hai, a Year 2 <strong>Computer Science</strong>{" "}
             student at the <strong>National University of Singapore</strong>. I
             love what I am studying and I am still in the midst of exploring all
@@ -40,7 +42,7 @@ class About extends Component {
             <br />
           </p>
         </Container>
-        <div>
+        {/* <div>
           <div className="hobby-item">
             <FontAwesomeIcon
               className="hobby-icon"
@@ -62,8 +64,8 @@ class About extends Component {
             ></FontAwesomeIcon>
             <h5>Gym</h5>
           </div>
-        </div>
-        <ScrollButton to="constructionSection" />
+        </div> */}
+        <ScrollButton to="skillsSection" />
       </Container>
     );
   }

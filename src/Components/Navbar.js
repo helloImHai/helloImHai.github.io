@@ -29,8 +29,8 @@ class Navbar extends Component {
     return (
       <Breadcrumbs aria-label="breadcrumb" className="nav-bar">
         <NavbarItem to={"aboutSection"} text="ABOUT" />
+        <NavbarItem to={"skillsSection"} text="SKILLS" />
         <NavbarItem to={"constructionSection"} text="EXPERIENCE" />
-        <NavbarItem to={"constructionSection"} text="SKILLS" />
       </Breadcrumbs>
     );
   }
