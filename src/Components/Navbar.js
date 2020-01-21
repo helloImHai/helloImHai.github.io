@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Breadcrumbs } from "@material-ui/core";
 import { connect } from "react-redux";
 
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const NAVBAR_SIZE = 50;
 
