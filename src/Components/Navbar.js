@@ -2,26 +2,27 @@ import React, { Component } from 'react'
 import { Breadcrumbs, Link } from '@material-ui/core';
 import { connect } from 'react-redux';
 
+const NAVBAR_SIZE = 50;
+
 class Navbar extends Component {
   aboutClick = (e) => {
     e.preventDefault();
     window.scrollTo({
-      top: this.props.aboutHeight,
+      top: this.props.aboutOffset - NAVBAR_SIZE,
       behavior: 'smooth',
     });
   }
   experienceClick = (e) => {
     e.preventDefault();
-    console.log(this.props.expHeight);
     window.scrollTo({
-      top: this.props.expHeight,
+      top: this.props.expOffset - NAVBAR_SIZE,
       behavior: 'smooth',
     });
   }
   skillsClick = (e) => {
     e.preventDefault();
     window.scrollTo({
-      top: this.props.skillsHeight,
+      top: this.props.skillsOffset - NAVBAR_SIZE,
       behavior: 'smooth',
     });
   }
@@ -44,9 +45,9 @@ class Navbar extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    aboutHeight: state.navbar.about,
-    expHeight: state.navbar.experience,
-    skillsHeight: state.navbar.skills
+    aboutOffset: state.navbar.about,
+    expOffset: state.navbar.experience,
+    skillsOffset: state.navbar.skills
   }
 }
 

@@ -10,7 +10,7 @@ import { updateHeightAbout } from '../actions/navbarActions'
 
 class About extends Component {
   componentDidMount() {
-    this.props.updateHeightAbout(this.sectionRef.scrollHeight);
+    this.props.updateHeightAbout(this.sectionRef.offsetTop);
   }
 
   getSectionRef = el => {
@@ -18,7 +18,6 @@ class About extends Component {
   }
 
   onScrollButtonClick = e => {
-    console.log(this.sectionRef.scrollHeight + this.sectionRef.offsetTop);
     if (this.sectionRef) {
       window.scrollTo({
         top: this.sectionRef.scrollHeight + this.sectionRef.offsetTop,

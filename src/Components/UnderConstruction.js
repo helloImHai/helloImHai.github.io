@@ -11,8 +11,8 @@ class UnderConstruction extends Component {
   }
 
   componentDidMount() {
-    this.props.updateHeightExp(this.sectionRef.scrollHeight + this.sectionRef.offsetTop);
-    this.props.updateHeightSkills(this.sectionRef.scrollHeight + this.sectionRef.offsetTop);
+    this.props.updateHeightExp(this.sectionRef.offsetTop);
+    this.props.updateHeightSkills(this.sectionRef.offsetTop);
   }
 
   render() {
