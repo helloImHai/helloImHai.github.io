@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Container } from "@material-ui/core";
-import profilePic from "../Utils/profile.png";
 import ScrollButton from "./ScrollButton.js";
 
 import { connect } from "react-redux";
@@ -48,7 +47,7 @@ class Work extends Component {
                 "Tutor Secondary and Junior College students in Mathematics, Physics and Chemistry to prepare them for O level, A level and IB exams. Place emphasis on thorough understanding and joy of learning."
               }
             />
-            <ScrollButton to="constructionSection" />
+            <ScrollButton to="projectsSection" />
           </Container>
         </Fade>
       </Container>

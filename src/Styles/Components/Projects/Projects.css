@@ -1,0 +1,29 @@
+.container-projects {
+  background-color: #161821;
+  color: #d2d2d2;
+  min-height: calc(100vh - 0px);
+}
+.container-projects h2 {
+  color: #225C98;
+}
+.container-projects strong {
+  color: #ff9683;
+}
+.container-projects .container-inner {
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 0px);
+  max-width: 1000px;
+}
+.container-projects .container-inner .project-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-projects .container-inner h3 {
+  font-weight: 500;
+  color: #ff9683;
+}

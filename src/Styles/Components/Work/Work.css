@@ -33,7 +33,13 @@
 .container-work .container-inner .jobBox {
   display: flex;
   text-align: right;
+  padding-bottom: 20px;
 }
 .container-work .container-inner .jobBox .jobHeader {
   flex: 0 0 30%;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .container-work .container-inner * {
+    font-size: 400;
+  }
 }
