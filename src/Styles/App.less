@@ -1,13 +1,13 @@
-@import 'Colors.less';
+@import "Colors.less";
 
-@navbarSize : 70px;
+@navbarSize: 70px;
 
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height        : 40vmin;
+  height: 40vmin;
   pointer-events: none;
 }
 
@@ -19,13 +19,13 @@
 
 .App-header {
   background-color: #282c34;
-  min-height      : 100vh;
-  display         : flex;
-  flex-direction  : column;
-  align-items     : center;
-  justify-content : center;
-  font-size       : calc(10px + 2vmin);
-  color           : white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
@@ -43,24 +43,25 @@
 }
 
 .arrow-down {
-  margin-top    : auto;
-  font-size     : 4.5vh;
+  margin-top: auto;
+  font-size: 4.5vh;
   padding-bottom: 2vh;
   opacity: 50%;
 }
-.arrow-down:hover{
+.arrow-down:hover {
   cursor: pointer;
 }
 
 .container-1 {
   background-color: @b0;
-  color           : @t0;
-  min-height      : calc(100vh - 0px);
-  padding-top     : 3vh;
-  padding-bottom  : 3vh;
-  display         : flex;
-  flex-direction  : column;
-  align-items     : center;
+  color: @t0;
+  min-height: calc(100vh - 0px);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 3px -3px rgba(255, 255, 255, 0.7);
 
   .container-inner {
     margin-top: 10vh;
@@ -88,15 +89,9 @@
 }
 
 .container-2 {
-  background-color: white;
-  color           : @b0;
-  padding-top     : 3vh;
-  padding-bottom  : 3vh;
-  min-height      : calc(100vh - 0px);
-  overflow        : hidden;
-  display         : flex;
-  flex-direction  : column;
-  align-items     : center;
+  background-color: @b0;
+  color: @t0;
+  min-height: calc(100vh - 0px);
 
   h2 {
     color: @p0;
@@ -106,22 +101,21 @@
   }
 
   .container-inner {
-    display       : flex;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
     flex-direction: column;
-    align-items   : center;
-
-    .empty {
-      height: 3vh;
-    }
+    align-items: center;
+    min-height: calc(100vh - 0px);
 
     .profile-pic {
-      margin-top   : 20px;
+      margin-top: 20px;
       margin-bottom: 20px;
-      height       : 200px;
+      height: 200px;
       border-radius: 100px;
-      border-color : white;
-      border-width : 2px;
-      box-shadow: 0px 0px 0px 5px rgba(0,0, 0, 0.8);
+      border-color: white;
+      border-width: 2px;
+      box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.8);
     }
 
     .description {
@@ -132,9 +126,9 @@
 
   .hobby-item {
     float: left;
-    display        : flex;
-    flex-direction : column;
-    align-items    : center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin: 10px;
     padding-left: 15px;
@@ -152,29 +146,29 @@
   background-color: @p0;
   color: white;
 
-  box-shadow: 0 3px 3px -3px rgba(0,0,0,.7);
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
 
   position: -webkit-sticky;
   position: sticky;
-  top     : 0;
+  top: 0;
 
-  display        : flex;
-  flex-direction : column;
-  align-items    : center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 
   z-index: 1;
-  width  : 100%;
-  height : @navbarSize;
+  width: 100%;
+  height: @navbarSize;
   .nav-bar-item {
     color: @b0;
     font-size: medium;
     font-weight: 450;
     -webkit-transition: color 1s;
-    -moz-transition:    color 1s;
-    -ms-transition:     color 1s;
-    -o-transition:      color 1s;
-    transition:         color 1s;
+    -moz-transition: color 1s;
+    -ms-transition: color 1s;
+    -o-transition: color 1s;
+    transition: color 1s;
   }
   .nav-bar-item:hover {
     cursor: pointer;
@@ -182,11 +176,11 @@
   }
   .nav-bar-item:active {
     color: @p0;
-    box-shadow: 0 3px 3px -3px rgba(0,0,0,.7);
+    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
     -webkit-transition: color 0s;
-    -moz-transition:    color 0s;
-    -ms-transition:     color 0s;
-    -o-transition:      color 0s;
-    transition:         color s;
+    -moz-transition: color 0s;
+    -ms-transition: color 0s;
+    -o-transition: color 0s;
+    transition: color 0s;
   }
 }

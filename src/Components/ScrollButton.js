@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class ScrollButton extends Component {
@@ -8,14 +8,14 @@ export default class ScrollButton extends Component {
     return (
       <Link
         activeClass="active"
-        className="arrow-down" 
+        className="arrow-down"
         to={this.props.to}
         spy={true}
         smooth={true}
         offset={-0}
         duration={500}
       >
-        <FontAwesomeIcon icon={faArrowCircleDown} />
+        <FontAwesomeIcon icon={faChevronDown} />
       </Link>
     );
   }
