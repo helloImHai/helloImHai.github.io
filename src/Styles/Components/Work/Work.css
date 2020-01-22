@@ -21,15 +21,6 @@
   font-weight: 500;
   color: #ff9683;
 }
-.container-work .container-inner .jobDesc {
-  text-align: justify;
-  padding-top: 5px;
-  padding-left: 10px;
-}
-.container-work .container-inner .jobDesc .jobName {
-  line-height: 21px;
-  color: #5A8DC3;
-}
 .container-work .container-inner .jobBox {
   display: flex;
   text-align: right;
@@ -38,8 +29,15 @@
 .container-work .container-inner .jobBox .jobHeader {
   flex: 0 0 30%;
 }
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .container-work .container-inner * {
-    font-size: 400;
-  }
+.container-work .container-inner .jobBox .jobHeader .jobDate {
+  font-size: 13px;
+}
+.container-work .container-inner .jobBox .jobDesc {
+  text-align: justify;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.container-work .container-inner .jobBox .jobDesc .jobName {
+  line-height: 21px;
+  color: #5A8DC3;
 }

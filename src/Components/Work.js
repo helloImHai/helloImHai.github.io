@@ -28,7 +28,7 @@ class Work extends Component {
               job={"CS1101S Teaching Assistant"}
               date={"Aug 19 -  Nov 19"}
               text={
-                "Lead a tutorial class to reinforce and consolidate concepts discussed during lecture. Offer one-on-one consultations with students to build a supportive learning environment."
+                "Led a tutorial class to reinforce and consolidate concepts discussed during lecture. Offered one-on-one consultations with students to build a supportive learning environment."
               }
             />
             <Job
@@ -36,7 +36,7 @@ class Work extends Component {
               job={"Front-End Testing"}
               date={"May 19 -  Jul 19"}
               text={
-                "Perform frontend testing on the Source Academy website that serves 600 staff and students per year. Add functional components to improve intuitive usability of the website using JS React framework."
+                "Performed frontend testing on the Source Academy website that serves 600 staff and students per year. Added functional components to improve intuitive usability of the website using JS React framework."
               }
             />
             <Job
@@ -44,7 +44,7 @@ class Work extends Component {
               job={"Tutor"}
               date={"Jan 18 -  Nov 18"}
               text={
-                "Tutor Secondary and Junior College students in Mathematics, Physics and Chemistry to prepare them for O level, A level and IB exams. Place emphasis on thorough understanding and joy of learning."
+                "Tutored Secondary and Junior College students in Mathematics, Physics and Chemistry to prepare them for O level, A level and IB exams. Placed emphasis on thorough understanding and joy of learning."
               }
             />
             <ScrollButton to="projectsSection" />
@@ -60,7 +60,7 @@ const Job = ({ text, date, name, job }) => {
     <div className={"jobBox"}>
       <div className={"jobHeader"}>
         <h3>{name}</h3>
-        <p>{date}</p>
+        <p className={"jobDate"}>{date}</p>
       </div>
       <div className={"jobDesc"}>
         <p className={"jobName"}>{job}</p>
