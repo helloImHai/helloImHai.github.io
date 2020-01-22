@@ -36,6 +36,7 @@
   font-size: 4.5vh;
   padding-bottom: 2vh;
   opacity: 50%;
+  text-align: center;
 }
 .arrow-down:hover {
   cursor: pointer;
@@ -64,7 +65,7 @@
   color: #3B70A8;
 }
 .container-1 .container-inner .my-name {
-  color: #e99a25;
+  color: #e7a0ae;
 }
 .container-2 {
   background-color: #161821;
@@ -75,7 +76,7 @@
   color: #225C98;
 }
 .container-2 strong {
-  color: #3B70A8;
+  color: #e7a0ae;
 }
 .container-2 .container-inner {
   padding-top: 3vh;

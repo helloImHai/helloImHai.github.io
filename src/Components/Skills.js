@@ -12,42 +12,46 @@ class Skills extends Component {
   render() {
     return (
       <Container className="container-4" maxWidth="xl" id="skillsSection">
-        <Fade big cascade duration={2000} fraction={0.3} triggerOnce={true}>
-          <h2>Skills</h2>
-          <br />
+        <Fade big duration={1500} fraction={0.3} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
-            <div>
-              <h4 className="languages">Languages</h4>
-              <ul>
-                <div>Javascript</div>
-                <div>HTML</div>
-                <div>CSS/Sass/Less</div>
-                <div>Java</div>
-                <div>C</div>
-                <div>Python</div>
-              </ul>
+            <h2>Skills</h2>
+            <br />
+            <div className="baby">
+              <div className="item">
+                <h4 className="languages">Languages</h4>
+                <ul className="list">
+                  <div>Javascript</div>
+                  <div>HTML</div>
+                  <div>CSS/Sass/Less</div>
+                  <div>Java</div>
+                  <div>C</div>
+                  <div>Python</div>
+                </ul>
+              </div>
+              <div className="item">
+                <h4 className="frameworkLib">Framework and Libraries</h4>
+                <ul>
+                  <div>React</div>
+                  <div>NodeJs</div>
+                  <div>Redux</div>
+                  <div>Saga</div>
+                  <div>Ajax</div>
+                  <div>JQuery</div>
+                </ul>
+              </div>
+              <div className="item">
+                <h4 className="otherTech">Other Technologies</h4>
+                <ul>
+                  <div>Github</div>
+                  <div>NPM</div>
+                  <div>Yarn</div>
+                </ul>
+              </div>
             </div>
-            <div>
-              <h4 className="frameworkLib">Framework and Libraries</h4>
-              <ul>
-                <div>React</div>
-                <div>NodeJs</div>
-                <div>Redux</div>
-                <div>Saga</div>
-                <div>Ajax</div>
-                <div>JQuery</div>
-              </ul>
-            </div>
-            <div>
-              <h4 className="otherTech">Other Technologies</h4>
-              <ul>
-                <div>Github</div>
-                <div>NPM</div>
-                <div>Yarn</div>
-              </ul>
-            </div>
+            <br/>
+            <ScrollButton to="constructionSection" />
           </Container>
-          <ScrollButton to="constructionSection" />
+          
         </Fade>
       </Container>
     );
