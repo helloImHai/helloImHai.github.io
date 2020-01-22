@@ -45,6 +45,7 @@ class Skills extends Component {
                   <div>Github</div>
                   <div>NPM</div>
                   <div>Yarn</div>
+                  <div>REST API</div>
                 </ul>
               </div>
               <div className="item">

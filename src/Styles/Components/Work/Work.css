@@ -27,10 +27,7 @@
   padding-bottom: 20px;
 }
 .container-work .container-inner .jobBox .jobHeader {
-  flex: 0 0 30%;
-}
-.container-work .container-inner .jobBox .jobHeader .jobDate {
-  font-size: 13px;
+  flex: 0 0 32%;
 }
 .container-work .container-inner .jobBox .jobDesc {
   text-align: justify;
