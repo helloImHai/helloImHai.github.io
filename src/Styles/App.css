@@ -34,7 +34,7 @@
 .arrow-down {
   margin-top: auto;
   font-size: 4.5vh;
-  padding-bottom: 2vh;
+  padding-bottom: 10vh;
   opacity: 50%;
   text-align: center;
 }
@@ -64,9 +64,6 @@
 .container-1 .container-inner .my-name {
   color: #e7a0ae;
 }
-.container-1 .container-inner .arrow-down {
-  padding-bottom: 10vh;
-}
 .container-2 {
   background-color: #161821;
   color: #d2d2d2;
@@ -80,7 +77,6 @@
 }
 .container-2 .container-inner {
   padding-top: 3vh;
-  padding-bottom: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;

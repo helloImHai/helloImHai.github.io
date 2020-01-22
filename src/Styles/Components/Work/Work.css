@@ -1,0 +1,18 @@
+.container-work {
+  background-color: #161821;
+  color: #d2d2d2;
+  min-height: calc(100vh - 0px);
+}
+.container-work h2 {
+  color: #225C98;
+}
+.container-work strong {
+  color: #e7a0ae;
+}
+.container-work .container-inner {
+  padding-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 0px);
+}

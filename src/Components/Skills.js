@@ -18,7 +18,7 @@ class Skills extends Component {
             <br />
             <div className="baby">
               <div className="item">
-                <h4 className="languages">Languages</h4>
+                <h4 className="cLanguages">Computer languages</h4>
                 <ul className="list">
                   <div>Javascript</div>
                   <div>HTML</div>
@@ -47,9 +47,16 @@ class Skills extends Component {
                   <div>Yarn</div>
                 </ul>
               </div>
+              <div className="item">
+                <h4 className="hLanguages">Human Languages</h4>
+                <ul>
+                  <div>English</div>
+                  <div>Vietnamese</div>
+                </ul>
+              </div>
             </div>
             <br/>
-            <ScrollButton to="constructionSection" />
+            <ScrollButton to="workSection" />
           </Container>
           
         </Fade>
