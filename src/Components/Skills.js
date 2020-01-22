@@ -18,7 +18,7 @@ class Skills extends Component {
             <br />
             <div className="baby">
               <div className="item">
-                <h4 className="cLanguages">Computer languages</h4>
+                <h4 className="cLanguages">Languages</h4>
                 <ul className="list">
                   <div>Javascript</div>
                   <div>HTML</div>
