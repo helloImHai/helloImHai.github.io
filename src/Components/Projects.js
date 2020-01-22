@@ -24,7 +24,7 @@ class Projects extends Component {
         maxWidth="xl"
         id="projectsSection"
       >
-        <Fade big cascade duration={2000} fraction={0.6} triggerOnce={true}>
+        <Fade big cascade duration={2000} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Projects</h2>
             <br />

@@ -12,7 +12,7 @@ class Skills extends Component {
   render() {
     return (
       <Container className="container-4" maxWidth="xl" id="skillsSection">
-        <Fade big duration={1500} fraction={0.3} triggerOnce={true}>
+        <Fade big duration={1500} fraction={0.1} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Skills</h2>
             <br />

@@ -11,7 +11,7 @@ class Work extends Component {
   render() {
     return (
       <Container className="container-work" maxWidth="xl" id="workSection">
-        <Fade big cascade duration={2000} fraction={0.6} triggerOnce={true}>
+        <Fade big cascade duration={2000} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Work Experience</h2>
             <br />

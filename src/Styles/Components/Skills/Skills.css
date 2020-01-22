@@ -3,6 +3,10 @@
   color: #d2d2d2;
   padding-top: 3vh;
   padding-bottom: 3vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container-4 h2 {
   color: #225C98;
@@ -28,7 +32,7 @@
 .container-4 .container-inner .baby .item h4 {
   flex: 0 0 110px;
   text-align: right;
-  color: #5A8DC3;
+  color: #ff9683;
   font-weight: 550;
 }
 .container-4 .container-inner .baby .item ul {
