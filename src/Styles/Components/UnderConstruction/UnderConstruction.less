@@ -3,11 +3,10 @@
 .container-3 {
   background-color: rgb(200, 200, 200);
   color: @b0;
-  padding-top: 10vh;
-  padding-bottom: 3vh;
-  min-height: calc(100vh - 0px);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-height: calc(100vh);
+  .inner-container{
+    padding-top: 10vh;
+    height: 100%;
+    min-height: calc(100vh);
+  }
 }

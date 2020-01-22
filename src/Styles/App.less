@@ -57,15 +57,12 @@
   background-color: @b0;
   color: @t0;
   min-height: calc(100vh - 0px);
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 3px 3px -3px rgba(255, 255, 255, 0.7);
 
   .container-inner {
-    margin-top: 10vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 0px);
 
     .greeting {
       font-size: calc(7vmin);
@@ -82,10 +79,9 @@
     .my-name {
       color: @c0;
     }
-
-    // .desc-word {
-    //   color: @p2;
-    // }
+    .arrow-down {
+      padding-bottom: 10vh;
+    }
   }
 }
 
