@@ -34,6 +34,7 @@ class About extends Component {
                 weird hobby of mine is translating English songs into different
                 languages.
                 <br />
+                <br />
               </p>
               <ScrollButton to="skillsSection" />
             </Container>

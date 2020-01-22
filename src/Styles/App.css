@@ -35,7 +35,7 @@
   margin-top: auto;
   font-size: 4.5vh;
   padding-bottom: 10vh;
-  opacity: 50%;
+  opacity: 0.5;
   text-align: center;
 }
 .arrow-down:hover {
@@ -62,7 +62,7 @@
   color: #3B70A8;
 }
 .container-1 .container-inner .my-name {
-  color: #e7a0ae;
+  color: #ff9683;
 }
 .container-2 {
   background-color: #161821;
@@ -73,13 +73,14 @@
   color: #225C98;
 }
 .container-2 strong {
-  color: #e7a0ae;
+  color: #ff9683;
 }
 .container-2 .container-inner {
   padding-top: 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 850px;
   min-height: calc(100vh - 0px);
 }
 .container-2 .container-inner .profile-pic {
