@@ -9,6 +9,7 @@ import UnderConstruction from "./UnderConstruction.js";
 import Skills from "./Skills.js";
 import Work from "./Work.js";
 import Projects from "./Projects.js";
+import Contact from "./Contact.js"
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
         <Skills />
         <Work />
         <Projects />
+        <Contact />
 
-        <UnderConstruction />
+        {/* <UnderConstruction /> */}
       </Provider>
     </div>
   );

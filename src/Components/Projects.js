@@ -31,7 +31,7 @@ class Projects extends Component {
         maxWidth="xl"
         id="projectsSection"
       >
-        <Fade big cascade duration={3000} triggerOnce={true}>
+        <Fade big cascade duration={3000} triggerOnce={true} fraction={0.05}>
           <Container className="container-inner" maxWidth="md">
             <h2>Projects</h2>
             <br /> <br />
@@ -41,7 +41,7 @@ class Projects extends Component {
                 text={
                   "Hello I'm Hai, this is the website you're on right now! Do you like it?"
                 }
-                website={""}
+                website={"/"}
                 img={imgPortfolioV2}
               />
               <MediaCard
@@ -85,8 +85,8 @@ class Projects extends Component {
                 img={imgJokes}
               />
             </div>
-            <br />
-            <ScrollButton to="constructionSection" />
+            <br /> <br />
+            <ScrollButton to="contactSection" />
           </Container>
         </Fade>
       </Container>

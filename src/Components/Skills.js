@@ -11,7 +11,7 @@ import { connect } from "react-redux";
 class Skills extends Component {
   render() {
     return (
-      <Container className="container-4" maxWidth="xl" id="skillsSection">
+      <Container className="container-4" maxWidth="xl" id="skillsSection" fraction={0.05}>
         <Fade big duration={1500} fraction={0.1} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Skills</h2>
