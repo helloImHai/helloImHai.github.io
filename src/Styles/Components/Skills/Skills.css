@@ -1,5 +1,5 @@
 .container-4 {
-  background-color: #161821;
+  background-color: #202020;
   color: #d2d2d2;
   padding-top: 3vh;
   padding-bottom: 3vh;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .container-4 h2 {
-  color: #225C98;
+  color: #2e6eb8;
   text-align: center;
 }
 .container-4 .container-inner {
@@ -32,7 +32,7 @@
 .container-4 .container-inner .baby .item h4 {
   flex: 0 0 110px;
   text-align: right;
-  color: #ff9683;
+  color: #ae65b3;
   font-weight: 550;
 }
 .container-4 .container-inner .baby .item ul {

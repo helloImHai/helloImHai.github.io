@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 .container-1 {
-  background-color: #161821;
+  background-color: #202020;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
@@ -59,21 +59,21 @@
   font-size: calc(3vmin);
 }
 .container-1 .container-inner .friend-name {
-  color: #3B70A8;
+  color: #2e6eb8;
 }
 .container-1 .container-inner .my-name {
-  color: #ff9683;
+  color: #ae65b3;
 }
 .container-2 {
-  background-color: #161821;
+  background-color: #202020;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
 .container-2 h2 {
-  color: #225C98;
+  color: #2e6eb8;
 }
 .container-2 strong {
-  color: #ff9683;
+  color: #ae65b3;
 }
 .container-2 .container-inner {
   padding-top: 3vh;
@@ -111,7 +111,7 @@
   font-size: 30px;
 }
 .nav-bar {
-  background-color: #225C98;
+  background-color: #2e6eb8;
   color: white;
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
   position: -webkit-sticky;
@@ -126,7 +126,7 @@
   height: 70px;
 }
 .nav-bar .nav-bar-item {
-  color: #161821;
+  color: #202020;
   font-size: medium;
   font-weight: 450;
   -webkit-transition: color 1s;
@@ -140,7 +140,7 @@
   color: white;
 }
 .nav-bar .nav-bar-item:active {
-  color: #225C98;
+  color: #2e6eb8;
   box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
   -webkit-transition: color 0s;
   -moz-transition: color 0s;

@@ -10,7 +10,12 @@ import "../Styles/Components/Work/Work.css";
 class Work extends Component {
   render() {
     return (
-      <Container className="container-work" maxWidth="xl" id="workSection" fraction={0.1}>
+      <Container
+        className="container-work"
+        maxWidth="xl"
+        id="workSection"
+        fraction={0.1}
+      >
         <Fade big cascade duration={2000} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Work Experience</h2>
@@ -63,7 +68,7 @@ const Job = ({ text, date, name, job }) => {
         <p className={"jobDate"}>{date}</p>
       </div>
       <div className={"jobDesc"}>
-        <p className={"jobName"}>{job}</p>
+        <h3 className={"jobName"}>{job}</h3>
         <p className={"jobText"}>{text}</p>
       </div>
     </div>

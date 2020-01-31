@@ -97,7 +97,7 @@ class Projects extends Component {
 const useStyles = makeStyles({
   card: {
     width: 294,
-    margin: "5px",
+    margin: "10px",
     // padding: "3px",
     border: "3px solid white"
   },

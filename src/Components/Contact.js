@@ -10,12 +10,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faGithub,
-  faGooglePlusSquare,
   faInstagram,
-  faLinkedinIn,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-import { faMailBulk, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 class Contact extends Component {
   render() {

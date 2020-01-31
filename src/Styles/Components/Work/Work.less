@@ -23,23 +23,26 @@
       font-weight: 500;
       color: @c0;
     }
-    
+
     .jobBox {
       display: flex;
       text-align: right;
       padding-bottom: 20px;
+      line-height: 22px;
       .jobHeader {
         flex: 0 0 32%;
       }
       .jobDesc {
         text-align: justify;
-        padding-top: 5px;
         padding-left: 10px;
         .jobName {
-          line-height: 21px;
           color: @p2;
         }
       }
+    }
+    @media (max-width: 500px) {
+      /* this is the same as not using a media query... */
+      font-size: small;
     }
   }
 }

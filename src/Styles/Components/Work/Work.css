@@ -1,13 +1,13 @@
 .container-work {
-  background-color: #161821;
+  background-color: #202020;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
 .container-work h2 {
-  color: #225C98;
+  color: #2e6eb8;
 }
 .container-work strong {
-  color: #ff9683;
+  color: #ae65b3;
 }
 .container-work .container-inner {
   padding-top: 3vh;
@@ -19,22 +19,27 @@
 }
 .container-work .container-inner h3 {
   font-weight: 500;
-  color: #ff9683;
+  color: #ae65b3;
 }
 .container-work .container-inner .jobBox {
   display: flex;
   text-align: right;
   padding-bottom: 20px;
+  line-height: 22px;
 }
 .container-work .container-inner .jobBox .jobHeader {
   flex: 0 0 32%;
 }
 .container-work .container-inner .jobBox .jobDesc {
   text-align: justify;
-  padding-top: 5px;
   padding-left: 10px;
 }
 .container-work .container-inner .jobBox .jobDesc .jobName {
-  line-height: 21px;
-  color: #5A8DC3;
+  color: #2e6eb8;
+}
+@media (max-width: 500px) {
+  .container-work .container-inner {
+    /* this is the same as not using a media query... */
+    font-size: small;
+  }
 }
