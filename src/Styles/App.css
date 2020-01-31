@@ -41,6 +41,11 @@
 .arrow-down:hover {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  body {
+    font-size: small;
+  }
+}
 .container-1 {
   background-color: #202020;
   color: #d2d2d2;
@@ -109,6 +114,20 @@
 }
 .container-2 .hobby-item .hobby-icon {
   font-size: 30px;
+}
+@media (max-width: 500px) {
+  .container-2 {
+    /* this is the same as not using a media query... */
+  }
+  .container-2 .profile-pic {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    border-radius: 75px;
+    border-color: white;
+    border-width: 2px;
+    box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.8);
+  }
 }
 .nav-bar {
   background-color: #2e6eb8;
