@@ -2,14 +2,12 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "../store";
 import "../Styles/App.css";
-// import Navbar from "./Navbar.js";
 import Intro from "./Intro.js";
 import About from "./About.js";
-import UnderConstruction from "./UnderConstruction.js";
 import Skills from "./Skills.js";
 import Work from "./Work.js";
 import Projects from "./Projects.js";
-import Contact from "./Contact.js"
+import Contact from "./Contact.js";
 
 function App() {
   return (

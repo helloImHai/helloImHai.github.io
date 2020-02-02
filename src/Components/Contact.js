@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "@material-ui/core";
+import { Container, Button } from "@material-ui/core";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -39,13 +39,23 @@ class Contact extends Component {
               <a href={"mailto:1503.hai.nguyen@gmail.com"} target={"_blank"}>
                 <FontAwesomeIcon className="icon" icon={faEnvelope} />
               </a>
-              <a href={"https://www.instagram.com/hainguyen__/"} target={"_blank"}>
+              <a
+                href={"https://www.instagram.com/hainguyen__/"}
+                target={"_blank"}
+              >
                 <FontAwesomeIcon className="icon" icon={faInstagram} />
               </a>
-              <a href={"https://www.linkedin.com/in/hai-nguyen-246346194/"} target={"_blank"}>
+              <a
+                href={"https://www.linkedin.com/in/hai-nguyen-246346194/"}
+                target={"_blank"}
+              >
                 <FontAwesomeIcon className="icon" icon={faLinkedin} />
               </a>
             </div>
+            <br />
+            <Button variant="contained" className="button" href="/resume.pdf">
+              Grab my resume
+            </Button>
           </Container>
         </Fade>
       </Container>
