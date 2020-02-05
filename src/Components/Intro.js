@@ -20,7 +20,7 @@ class Intro extends Component {
               <strong className="desc-word">solve problems</strong>.
             </h2>
             <ScrollButton to="aboutSection" />
-          </Container> 
+          </Container>
         </Fade>
       </Container>
     );

@@ -52,9 +52,16 @@ class Contact extends Component {
                 <FontAwesomeIcon className="icon" icon={faLinkedin} />
               </a>
             </div>
-            <br />
+            <br /> <br />
             <Button variant="contained" className="button" href="/resume.pdf">
               Grab my resume
+            </Button>
+            <Button
+              variant="contained"
+              className="button"
+              href="/transcript.pdf"
+            >
+              Peek my transcript
             </Button>
           </Container>
         </Fade>

@@ -8,6 +8,7 @@ import Skills from "./Skills.js";
 import Work from "./Work.js";
 import Projects from "./Projects.js";
 import Contact from "./Contact.js";
+// import Navbar from "./Navbar.js";
 
 function App() {
   return (

@@ -40,7 +40,9 @@
   align-items: center;
 }
 .container-contact .container-inner .button {
-  width: 200px;
+  font-size: small;
+  width: 180px;
+  margin-bottom: 20px;
 }
 .container-contact .container-inner .button:hover {
   transition: color 0.5s;

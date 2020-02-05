@@ -71,11 +71,21 @@ body {
     min-height: calc(100vh - 0px);
 
     .greeting {
-      font-size: calc(7vmin);
+      font-size: calc(7vh);
     }
 
     .short-line {
-      font-size: calc(3vmin);
+      font-size: calc(3vh);
+    }
+
+    @media (max-width: 500px) {
+      .greeting {
+        font-size: calc(5vh);
+      }
+
+      .short-line {
+        font-size: calc(2vh);
+      }
     }
 
     .friend-name {
@@ -155,45 +165,25 @@ body {
   }
 }
 
-.nav-bar {
-  background-color: @p0;
-  color: white;
-
-  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
-
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-
+.sticky-navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background-color: @b0;
+  .button-navbar {
+    position: sticky;
+  }
+  .button {
+    position: sticky;
+    color: @t0;
+  }
+  .button:hover {
+    position: sticky;
+    color: @c0;
+  }
+}
+.list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  z-index: 1;
-  width: 100%;
-  height: @navbarSize;
-  .nav-bar-item {
-    color: @b0;
-    font-size: medium;
-    font-weight: 450;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s;
-  }
-  .nav-bar-item:hover {
-    cursor: pointer;
-    color: white;
-  }
-  .nav-bar-item:active {
-    color: @p0;
-    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.7);
-    -webkit-transition: color 0s;
-    -moz-transition: color 0s;
-    -ms-transition: color 0s;
-    -o-transition: color 0s;
-    transition: color 0s;
-  }
 }
