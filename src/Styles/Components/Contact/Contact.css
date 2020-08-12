@@ -1,5 +1,5 @@
 .container-contact {
-  background-color: #202020;
+  background-color: #292a36;
   color: #d2d2d2;
   padding-top: 3vh;
   padding-bottom: 3vh;
@@ -10,7 +10,7 @@
 }
 .container-contact h2 {
   text-align: center;
-  color: #2e6eb8;
+  color: #7cd9e9;
 }
 .container-contact .logos {
   display: flex;
@@ -29,7 +29,7 @@
 }
 .container-contact .logos .icon:hover {
   cursor: pointer;
-  color: #ae65b3;
+  color: #cba8fe;
 }
 .container-contact .logos .icon:active {
   color: white;
@@ -46,5 +46,5 @@
 }
 .container-contact .container-inner .button:hover {
   transition: color 0.5s;
-  background-color: #ae65b3;
+  background-color: #cba8fe;
 }

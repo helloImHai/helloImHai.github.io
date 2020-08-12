@@ -22,6 +22,7 @@ import imgSourceAcad from "../Utils/sourceAcademy.png";
 import imgJokes from "../Utils/jokes.png";
 import imgMusicMaster from "../Utils/musicMaster.png";
 import imgCirbd from "../Utils/cirbd.png";
+import imgAMA from "../Utils/ama.png";
 
 class Projects extends Component {
   render() {
@@ -37,11 +38,21 @@ class Projects extends Component {
             <br /> <br />
             <div className={"project-cards"}>
               <MediaCard
+                name={"Ask Hai Anything"}
+                text={
+                  "A single user Ask Me Anything website! Click to find out more about me."
+                }
+                website={"http://188.166.255.242/"}
+                code={"https://github.com/helloImHai/tells"}
+                img={imgAMA}
+              />
+              <MediaCard
                 name={"Portfolio Version 2.0"}
                 text={
                   "Hello I'm Hai, this is the website you're on right now! Do you like it?"
                 }
                 website={"/"}
+                code={"https://github.com/helloImHai/helloImHai.github.io"}
                 img={imgPortfolioV2}
               />
               <MediaCard
@@ -50,6 +61,7 @@ class Projects extends Component {
                   "Ship route visualisation and tracking website on internship in China."
                 }
                 website={"http://ship.cirbd.cn/"}
+                code={null}
                 img={imgCirbd}
               />
               <MediaCard
@@ -58,6 +70,7 @@ class Projects extends Component {
                   "Portfolio using React and React libraries, created following a tutorial on Skillshare."
                 }
                 website={"http://hello-im-hai.herokuapp.com/"}
+                code={"https://github.com/helloImHai/portfolio"}
                 img={imgPortfolioV1}
               />
               <MediaCard
@@ -74,6 +87,7 @@ class Projects extends Component {
                   "Simple Spotify artist search website, created following a tutorial on Skillshare."
                 }
                 website={"http://hello-im-hai.herokuapp.com/music-master"}
+                code={"https://github.com/helloImHai/portfolio"}
                 img={imgMusicMaster}
               />
               <MediaCard
@@ -82,6 +96,7 @@ class Projects extends Component {
                   "Simple joke query website, created following a tutorial on Skillshare."
                 }
                 website={"http://hello-im-hai.herokuapp.com/jokes"}
+                code={"https://github.com/helloImHai/portfolio"}
                 img={imgJokes}
               />
             </div>
@@ -99,14 +114,17 @@ const useStyles = makeStyles({
     width: 294,
     margin: "10px",
     // padding: "3px",
-    border: "3px solid white"
+    backgroundColor: "rgb(31, 32, 44)",
+    border: "3px solid rgb(31, 32, 44)",
+    textColor: "rgb(240, 240, 240)",
   },
   media: {
-    height: 140
-  }
+    height: 140,
+    opacity: "80%",
+  },
 });
 
-function MediaCard({ name, text, website, img }) {
+function MediaCard({ name, text, website, img, code }) {
   const classes = useStyles();
 
   return (
@@ -114,21 +132,40 @@ function MediaCard({ name, text, website, img }) {
       <CardActionArea href={website} target="_blank">
         <CardMedia className={classes.media} image={img} title={name} />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h5">
             {name}
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" style={{ color: "rgb(220, 220, 220)" }}>
             {text}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Code
-        </Button>
-        <Button size="small" color="primary" href={website} target="_blank">
+        <Button
+          size="small"
+          style={{ color: "rgb(124, 217, 233)", paddingLeft: "10px" }}
+          href={website}
+          target="_blank"
+        >
           Website
         </Button>
+        {code ? (
+          <Button
+            size="small"
+            style={
+              code
+                ? { color: "rgb(124, 217, 233)" }
+                : { color: "rgb(31, 32, 44)" }
+            }
+            disabled={!code}
+            href={code ? code : "/"}
+            target={code ? "_blank" : null}
+          >
+            Code
+          </Button>
+        ) : (
+          ""
+        )}
       </CardActions>
     </Card>
   );

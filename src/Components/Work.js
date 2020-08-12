@@ -21,6 +21,14 @@ class Work extends Component {
             <h2>Work Experience</h2>
             <br />
             <Job
+              name={"Ninja Van Logistics"}
+              job={"Software Engineer Intern"}
+              date={"May 20 -  Aug 20"}
+              text={
+                "Worked in an engineer team to transition the backend microservices in Ninja Van to communicate through asynchronous pub-sub. Implemented new notifications to shipper and consignee."
+              }
+            />
+            <Job
               name={"Consumer Insight Research (Chongqing, China)"}
               job={"Front-End Developer"}
               date={"Dec 19 -  Jan 20"}

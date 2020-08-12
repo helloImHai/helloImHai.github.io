@@ -11,7 +11,12 @@ import { connect } from "react-redux";
 class Skills extends Component {
   render() {
     return (
-      <Container className="container-4" maxWidth="xl" id="skillsSection" fraction={0.05}>
+      <Container
+        className="container-4"
+        maxWidth="xl"
+        id="skillsSection"
+        fraction={0.05}
+      >
         <Fade big duration={1500} fraction={0.1} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h2>Skills</h2>
@@ -20,23 +25,36 @@ class Skills extends Component {
               <div className="item">
                 <h4 className="cLanguages">Languages</h4>
                 <ul className="list">
-                  <div>Javascript</div>
-                  <div>HTML</div>
-                  <div>CSS/Sass/Less</div>
-                  <div>Java</div>
-                  <div>C</div>
-                  <div>Python</div>
+                  {[
+                    "Javascript",
+                    "HTML",
+                    "CSS/Less",
+                    "Java",
+                    "C",
+                    "Python",
+                    "Golang",
+                    "SQL",
+                  ].map((language) => (
+                    <div>{language}</div>
+                  ))}
                 </ul>
               </div>
               <div className="item">
                 <h4 className="frameworkLib">Framework and Libraries</h4>
                 <ul>
-                  <div>React</div>
-                  <div>NodeJs</div>
-                  <div>Redux</div>
-                  <div>Saga</div>
-                  <div>Ajax</div>
-                  <div>JQuery</div>
+                  {[
+                    "React",
+                    "NodeJs",
+                    "Express",
+                    "Redux",
+                    "Saga",
+                    "Jquery",
+                    "Ajax",
+                    "Play FW",
+                    "Kafka",
+                  ].map((language) => (
+                    <div>{language}</div>
+                  ))}
                 </ul>
               </div>
               <div className="item">
@@ -56,10 +74,9 @@ class Skills extends Component {
                 </ul>
               </div>
             </div>
-            <br/>
+            <br />
             <ScrollButton to="workSection" />
           </Container>
-          
         </Fade>
       </Container>
     );

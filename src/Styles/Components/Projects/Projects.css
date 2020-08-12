@@ -1,13 +1,16 @@
 .container-projects {
-  background-color: #202020;
+  background-color: #292a36;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
 .container-projects h2 {
-  color: #2e6eb8;
+  color: #7cd9e9;
+}
+.container-projects h5 {
+  color: #cba8fe;
 }
 .container-projects strong {
-  color: #ae65b3;
+  color: #cba8fe;
 }
 .container-projects .container-inner {
   padding-top: 3vh;
@@ -24,6 +27,5 @@
   justify-content: center;
 }
 .container-projects .container-inner h3 {
-  font-weight: 500;
-  color: #ae65b3;
+  font-weight: 00;
 }

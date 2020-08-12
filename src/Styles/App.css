@@ -11,7 +11,7 @@
   }
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #292a36;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@
   }
 }
 .container-1 {
-  background-color: #202020;
+  background-color: #292a36;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
@@ -72,21 +72,21 @@
   }
 }
 .container-1 .container-inner .friend-name {
-  color: #2e6eb8;
+  color: #7cd9e9;
 }
 .container-1 .container-inner .my-name {
-  color: #ae65b3;
+  color: #cba8fe;
 }
 .container-2 {
-  background-color: #202020;
+  background-color: #292a36;
   color: #d2d2d2;
   min-height: calc(100vh - 0px);
 }
 .container-2 h2 {
-  color: #2e6eb8;
+  color: #7cd9e9;
 }
 .container-2 strong {
-  color: #ae65b3;
+  color: #cba8fe;
 }
 .container-2 .container-inner {
   padding-top: 3vh;
@@ -142,7 +142,7 @@
   top: 20px;
   right: 20px;
   z-index: 1;
-  background-color: #202020;
+  background-color: #292a36;
 }
 .sticky-navbar .button-navbar {
   position: sticky;
@@ -153,7 +153,7 @@
 }
 .sticky-navbar .button:hover {
   position: sticky;
-  color: #ae65b3;
+  color: #cba8fe;
 }
 .list {
   display: flex;
