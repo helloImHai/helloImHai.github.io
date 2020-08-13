@@ -10,7 +10,7 @@ class Intro extends Component {
         <Fade big duration={3000} triggerOnce={true}>
           <Container className="container-inner" maxWidth="md">
             <h1 className="greeting">
-              HELLO <strong className="friend-name">FRIEND</strong>,<br />
+              HELLO <strong className="friend-name">FRIEND!</strong>,<br />
               I'M <strong className="my-name">HAI</strong>!
             </h1>
             <br />
