@@ -11,7 +11,7 @@ import {
   faFacebookF,
   faGithub,
   faInstagram,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
@@ -46,7 +46,7 @@ class Contact extends Component {
                 <FontAwesomeIcon className="icon" icon={faInstagram} />
               </a>
               <a
-                href={"https://www.linkedin.com/in/hai-nguyen-246346194/"}
+                href={"https://www.linkedin.com/in/helloimhai/"}
                 target={"_blank"}
               >
                 <FontAwesomeIcon className="icon" icon={faLinkedin} />

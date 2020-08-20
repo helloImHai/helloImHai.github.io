@@ -21,6 +21,15 @@ class Work extends Component {
             <h2>Work Experience</h2>
             <br />
             <Job
+              name={"National University of Singapore"}
+              job={"Undergraduate Teaching Assistant"}
+              date={"Aug 19 - Present"}
+              text={
+                "Support the teaching team in various modules: Data Structures & Algorithms (Aug 20) / Programming Methodology (Aug 19, Aug 20).\
+                 Lead tutorials and labs to reinforce and consolidate new concepts. Offer one-on-one consultations to build a supportive learning environment."
+              }
+            />
+            <Job
               name={"Ninja Van Logistics"}
               job={"Software Engineer Intern"}
               date={"May 20 -  Aug 20"}
@@ -34,14 +43,6 @@ class Work extends Component {
               date={"Dec 19 -  Jan 20"}
               text={
                 "Created a shipping route visualization website from scratch that was pitched to investors two weeks into incubation. Optimized and managed large pool of data to maintain a friendly and responsive user interface."
-              }
-            />
-            <Job
-              name={"National University of Singapore"}
-              job={"CS1101S Teaching Assistant"}
-              date={"Aug 19 -  Nov 19"}
-              text={
-                "Led a tutorial class to reinforce and consolidate concepts discussed during lecture. Offered one-on-one consultations with students to build a supportive learning environment."
               }
             />
             <Job
