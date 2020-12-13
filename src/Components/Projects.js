@@ -23,6 +23,7 @@ import imgJokes from "../Utils/jokes.png";
 import imgMusicMaster from "../Utils/musicMaster.png";
 import imgCirbd from "../Utils/cirbd.png";
 import imgAMA from "../Utils/ama.png";
+import imgFFF from "../Utils/four-five-foe.png";
 
 class Projects extends Component {
   render() {
@@ -37,6 +38,15 @@ class Projects extends Component {
             <h2>Projects</h2>
             <br /> <br />
             <div className={"project-cards"}>
+              <MediaCard
+                name={"Four Five Foe"}
+                text={
+                  "Multiplayer tic-tac-toe variant that I played when I was a kid."
+                }
+                website={"https://helloimhai.github.io/four-five-foe/"}
+                code={"https://github.com/helloImHai/four-five-foe/"}
+                img={imgFFF}
+              />
               <MediaCard
                 name={"Ask Hai Anything"}
                 text={
