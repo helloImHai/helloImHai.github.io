@@ -53,14 +53,6 @@ class Work extends Component {
                 "Performed frontend testing on the Source Academy website that serves 600 staff and students per year. Added functional components to improve intuitive usability of the website using JS React framework."
               }
             />
-            <Job
-              name={"Math Vision and Private"}
-              job={"Tutor"}
-              date={"Jan 18 -  Nov 18"}
-              text={
-                "Tutored Secondary and Junior College students in Mathematics, Physics and Chemistry to prepare them for O level, A level and IB exams. Placed emphasis on thorough understanding and joy of learning."
-              }
-            />
             <ScrollButton to="projectsSection" />
           </Container>
         </Fade>
