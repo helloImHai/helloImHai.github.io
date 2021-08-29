@@ -1,29 +1,46 @@
 import React from "react";
-import { Provider } from "react-redux";
-import store from "../store";
-import "../Styles/App.css";
-import Intro from "./Intro.js";
-import About from "./About.js";
-import Skills from "./Skills.js";
-import Work from "./Work.js";
-import Projects from "./Projects.js";
-import Contact from "./Contact.js";
-// import Navbar from "./Navbar.js";
+import Intro from "../component/Introduction";
+import About from "../component/About";
+import Contact from "../component/Contact";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+import HNavbar from "../component/HNavbar";
+
+const themeLight = createTheme({
+  palette: {
+    background: {
+      default: "#e4f0e2"
+    }
+  }
+});
+
+const themeDark = createTheme({
+    palette: {
+        background: {
+            default: "#222222"
+        },
+        text: {
+            primary: "#ffffff"
+        }
+    },
+    typography: {
+        fontFamily: ['"Roboto Mono"', 'monospace'].join(','),
+        strong: {
+            color: "#2882F8",
+        }
+    }
+});
 
 function App() {
   return (
     <div>
-      <Provider store={store}>
-        {/* <Navbar /> */}
-        <Intro />
-        <About />
-        <Skills />
-        <Work />
-        <Projects />
-        <Contact />
-
-        {/* <UnderConstruction /> */}
-      </Provider>
+        <ThemeProvider theme={themeDark}>
+            <CssBaseline />
+            <HNavbar />
+            <Intro />
+            <About />
+            <Contact/>
+        </ThemeProvider>
     </div>
   );
 }
