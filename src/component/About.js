@@ -1,13 +1,12 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import profilePic from "../Utils/profile.png";
 import HContainer from "./HContainer"
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyle = makeStyles({ 
     profilePic: { 
-        marginTop: "20px",
-        marginBottom: "20px",
+        margin: "20px",
         height: "200px",
         borderRadius: "100px",
         borderColor: "white",
@@ -21,18 +20,31 @@ function About() {
     const classes = useStyle();
     return (
         <HContainer id="about-section">
-            <img className={classes.profilePic} src={profilePic} alt="profile-pic" />
-            <Typography variant="h2">
-                hello <p className={classes.friend}>friend</p>,
-                <br/>
-                i'm <p className={classes.hai}>hai</p>.
-            </Typography>
-            <br/><br/>
-            <Typography variant="h4">
-                Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries.
-            </Typography>
-        </HContainer>
-        // {/* <ScrollButton to="aboutSection" /> */}   
+            <Box  m={3}>
+                <Typography variant="h4">
+                    about me
+                </Typography>
+            </Box>
+            <Grid container 
+                direction="row"
+                alignItems="center"
+                spacing={2}>
+                <Grid item xs={12} md={4}>
+                    <img className={classes.profilePic} src={profilePic} alt="profile-pic" />
+                </Grid>
+                <Grid item xs={12} md={8}>
+                    <Typography variant="h6">
+                        I'm a senior year <b>Computer Science</b> ASEAN scholar from the <b>National 
+                        University of Singapore</b>. I enjoy building robust,
+                        reliable, and scalable software engineering architectures.
+                        <br/><br/>
+                        I have experience working as a backend web engineer in large scale payments 
+                        and trading platforms... I'm a quick learner and always open to tackle new challenges.
+                    </Typography>
+                </Grid>
+            </Grid>
+            <Box m={10}/>
+        </HContainer>  
     );
 }
 

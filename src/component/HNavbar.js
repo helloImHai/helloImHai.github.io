@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import { Button, Slide } from '@material-ui/core';
+import { ButtonBase, Slide } from '@material-ui/core';
 import { Link } from "react-scroll";
 
 function HideOnScroll(props) {
@@ -33,7 +33,7 @@ HideOnScroll.propTypes = {
 function HNavbar(props) {
     return (
         <HideOnScroll {...props}>
-            <AppBar position="sticky" color="transparent" elevation={0}>
+            <AppBar position="sticky" color="transparent" elevation={0} >
                 <Toolbar>
                     {
                         ["about-section"].map((sectionId, key) => {
@@ -45,9 +45,9 @@ function HNavbar(props) {
                                 smooth={true}
                                 duration={500}
                             >
-                                <Button>
+                                <ButtonBase>
                                     <Typography>about</Typography>
-                                </Button>
+                                </ButtonBase>
                             </Link>
                         })
                     }
