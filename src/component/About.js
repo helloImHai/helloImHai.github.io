@@ -38,7 +38,8 @@ function About() {
                         reliable, and scalable software engineering architectures.
                         <br/><br/>
                         I have experience working as a backend web engineer in large scale payments 
-                        and trading platforms... I'm a quick learner and always open to tackle new challenges.
+                        systems and high fequency trading platforms. I'm a quick learner and I'm 
+                        always open to tackle new challenges.
                     </Typography>
                 </Grid>
                 <Box m={2}/>
