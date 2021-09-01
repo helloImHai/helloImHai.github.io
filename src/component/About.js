@@ -49,12 +49,12 @@ function About() {
                     spacing={3}>
                     <Grid container item xs={6} justifyContent="flex-end">
                         <Button variant="outlined" color="inherit" href="/resume.pdf" target="_blank">
-                            Grab my resume
+                            resume
                         </Button>
                     </Grid>
                     <Grid item xs={6}>
                         <Button variant="outlined" color="inherit" href="/transcript.pdf" target="_blank">
-                            Peek my transcript
+                            transcript
                         </Button>
                     </Grid>
                 </Grid>
