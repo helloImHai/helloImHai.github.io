@@ -5,6 +5,7 @@ import Contact from "../component/Contact";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import HNavbar from "../component/HNavbar";
+import Experience from "../component/Experience";
 
 const themeLight = createTheme({
   palette: {
@@ -39,7 +40,8 @@ function App() {
             <HNavbar />
             <Intro />
             <About />
-            <Contact/>
+            <Experience />
+            <Contact />
         </ThemeProvider>
     </div>
   );

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Box, Grid, Typography } from "@material-ui/core";
-import profilePic from "../Utils/profile.png";
 import HContainer from "./HContainer"
 import { makeStyles } from "@material-ui/core/styles";
+import ExperienceTimeline from "./ExperienceTimeline";
 
 const useStyle = makeStyles({ 
     profilePic: { 
@@ -15,24 +15,41 @@ const useStyle = makeStyles({
     }
 });
 
-function About() {
-    const classes = useStyle();
+const jobs = [
+
+]
+
+function Experience() {
+    const [jobIndex, setJobIndex] = useState(3)
     return (
-        <HContainer id="about">
+        <HContainer id="experience">
             <Box  m={3}>
                 <Typography variant="h4">
-                    about me
+                    work experience
                 </Typography>
             </Box>
             <Grid container 
                 direction="row"
-                alignItems="center"
+                justifyContent="center"
+                alignItems="flex-start"
                 spacing={2}>
-                <Grid item xs={12} md={4}>
-                    <img className={classes.profilePic} src={profilePic} alt="profile-pic" />
+                <Grid item xs={12}>
+                    <ExperienceTimeline jobIndex={jobIndex} setJobIndex={setJobIndex}/>
                 </Grid>
-                <Grid item xs={12} md={8}>
-                    <Typography variant="h6">
+                <Grid container item xs={12} md={3} direction="column" justifyContent="flex-start">
+                    <Grid item>
+                        <Typography variant="h5" align="right">
+                            <b>Shopee</b>
+                        </Typography>
+                    </Grid>
+                    <Grid item>
+                        <Typography variant="h6" align="right">
+                            Software Engineering Intern
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid item xs={12} md={9}>
+                    <Typography variant="p">
                         I'm a senior year <b>Computer Science</b> ASEAN scholar from the <b>National 
                         University of Singapore</b>. I enjoy building robust,
                         reliable, and scalable software engineering architectures.
@@ -41,26 +58,9 @@ function About() {
                         and trading platforms... I'm a quick learner and always open to tackle new challenges.
                     </Typography>
                 </Grid>
-                <Box m={2}/>
-                <Grid container direction="row"
-                    justifyContent="center"
-                    alignItems="center"
-                    spacing={3}>
-                    <Grid container item xs={6} justifyContent="flex-end">
-                        <Button variant="outlined" color="inherit" href="/resume.pdf" target="_blank">
-                            Grab my resume
-                        </Button>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <Button variant="outlined" color="inherit" href="/transcript.pdf" target="_blank">
-                            Peek my transcript
-                        </Button>
-                    </Grid>
-                </Grid>
             </Grid>
-            <Box m={10}/>
         </HContainer>  
     );
 }
 
-export default About;
+export default Experience;

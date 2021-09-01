@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import { ButtonBase, Slide } from '@material-ui/core';
+import { Box, ButtonBase, Slide } from '@material-ui/core';
 import { Link } from "react-scroll";
 
 function HideOnScroll(props) {
@@ -34,21 +34,22 @@ function HNavbar(props) {
     return (
         <HideOnScroll {...props}>
             <AppBar position="sticky" color="transparent" elevation={0} >
-                <Toolbar>
+                <Toolbar style={{marginLeft: "auto"}}>
                     {
-                        ["about-section"].map((sectionId, key) => {
-                            return <Link
-                                activeClass="active"
-                                key={`navbar-item-${key}`}
-                                to={sectionId}
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                            >
-                                <ButtonBase>
-                                    <Typography>about</Typography>
-                                </ButtonBase>
-                            </Link>
+                        ["about", "experience", "contact"].map((sectionId, key) => {
+                            return <Box key={`navbar-item-${sectionId}-${key}`} m={3}>
+                                <Link
+                                    activeClass="active"
+                                    to={sectionId}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                >
+                                    <ButtonBase>
+                                        <Typography>{sectionId}</Typography>
+                                    </ButtonBase>
+                                </Link>
+                            </Box>
                         })
                     }
                     

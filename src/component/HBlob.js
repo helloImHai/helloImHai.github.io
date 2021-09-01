@@ -4,7 +4,7 @@ import TweenOne from 'rc-tween-one';
 import { Fade } from "react-awesome-reveal";
 TweenOne.plugins.push(SvgMorphPlugin);
 
-export default function HBlob() {
+export default function HBlob(props) {
     let animation = {
         d: "M115.4 -137.9C137.9 -92.9 136.4 -46.4 133.6 -2.8C130.8 40.8 126.6 81.6 104.1 118.4C81.6 155.2 40.8 188.1 -8.4 196.5C-57.5 204.8 -115 188.7 -151 151.9C-187 115 -201.5 57.5 -190.8 10.7C-180.1 -36.1 -144.1 -72.1 -108.1 -117.1C-72.1 -162.1 -36.1 -216.1 5.2 -221.2C46.4 -226.4 92.9 -182.9 115.4 -137.9",
         style: {fill: "#993366"},
@@ -13,7 +13,7 @@ export default function HBlob() {
         duration: 3000,
     }
     return (
-        <Fade big delay={1500} duration={3000} triggerOnce={true}>
+        <Fade big delay={500} duration={2000} triggerOnce={true}>
             <svg
                 className="blob-motion"
                 id="visual"
@@ -23,7 +23,7 @@ export default function HBlob() {
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
                 version="1.1"
-                
+                display={props.show}
             >
                 <g transform="translate(450.7256843113689 283.4942824330989)">
                     <TweenOne
