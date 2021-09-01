@@ -28,7 +28,7 @@ export default function Contact() {
     const classes = useStyle()
     return (
         <HContainer>
-            <Box  m={3}>
+            <Box  marginY="30px">
                 <Typography variant="h4" id="contact">
                     contact me
                 </Typography>

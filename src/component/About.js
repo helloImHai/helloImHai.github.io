@@ -19,7 +19,7 @@ function About() {
     const classes = useStyle();
     return (
         <HContainer id="about">
-            <Box  m={3}>
+            <Box marginY="30px">
                 <Typography variant="h4">
                     about me
                 </Typography>

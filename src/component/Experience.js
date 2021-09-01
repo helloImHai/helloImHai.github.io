@@ -34,7 +34,7 @@ function Experience() {
     const classes = useStyle()
     return (
         <HContainer id="experience">
-            <Box  m={3}>
+            <Box marginY="30px">
                 <Typography variant="h4">
                     work experience
                 </Typography>
