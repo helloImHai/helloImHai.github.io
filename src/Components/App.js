@@ -6,6 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { ThemeProvider, createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import HNavbar from "../component/HNavbar";
 import Experience from "../component/Experience";
+import Projects from "../component/Projects";
 
 const themeLight = createTheme({
   palette: {
@@ -41,6 +42,7 @@ function App() {
             <Intro />
             <About />
             <Experience />
+            <Projects />
             <Contact />
         </ThemeProvider>
     </div>
