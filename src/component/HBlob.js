@@ -2,6 +2,7 @@ import React from "react";
 import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import TweenOne from 'rc-tween-one';
 import { Fade } from "react-awesome-reveal";
+import { Box } from "@material-ui/core"
 TweenOne.plugins.push(SvgMorphPlugin);
 
 export default function HBlob(props) {
@@ -13,29 +14,32 @@ export default function HBlob(props) {
         duration: 3000,
     }
     return (
-        <Fade big delay={500} duration={2000} triggerOnce={true}>
-            <svg
-                className="blob-motion"
-                id="visual"
-                viewBox="0 0 960 540"
-                width="960"
-                height="540"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                version="1.1"
-                display={props.show}
-            >
-                <g transform="translate(450.7256843113689 283.4942824330989)">
-                    <TweenOne
-                        animation={animation}
-                        style={{ fill: '#6900CC' }}
-                        paused={false}
-                        component="path"
-                        d="M148.7 -134.9C193.7 -103.7 231.9 -51.9 232.4 0.6C233 53 196.1 106.1 151.1 128.6C106.1 151.1 53 143 -4.4 147.4C-61.8 151.8 -123.5 168.5 -151.2 146C-178.8 123.5 -172.4 61.8 -172.8 -0.4C-173.1 -62.5 -180.3 -124.9 -152.6 -156.1C-124.9 -187.3 -62.5 -187.1 -5.3 -181.8C51.9 -176.5 103.7 -166 148.7 -134.9"
-                        attr="attr"
-                    />
-                </g>
-            </svg>
-        </Fade>
+        <Box display="flex" justifyContent="center" >
+            <Fade big delay={500} duration={2000} triggerOnce={true}>
+                <svg
+                    className="blob-motion"
+                    id="visual"
+                    viewBox="0 0 500 500"
+                    width="80vw"
+                    // height="540"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    version="1.1"
+                    display={props.show} 
+                    style={{padding: "5vw", maxWidth: "600px"}}
+                >
+                    <g transform="translate(250, 250)">
+                        <TweenOne
+                            animation={animation}
+                            style={{ fill: '#6900CC' }}
+                            paused={false}
+                            component="path"
+                            d="M148.7 -134.9C193.7 -103.7 231.9 -51.9 232.4 0.6C233 53 196.1 106.1 151.1 128.6C106.1 151.1 53 143 -4.4 147.4C-61.8 151.8 -123.5 168.5 -151.2 146C-178.8 123.5 -172.4 61.8 -172.8 -0.4C-173.1 -62.5 -180.3 -124.9 -152.6 -156.1C-124.9 -187.3 -62.5 -187.1 -5.3 -181.8C51.9 -176.5 103.7 -166 148.7 -134.9"
+                            attr="attr"
+                        />
+                    </g>
+                </svg>
+            </Fade>
+        </Box>
     )
 }
