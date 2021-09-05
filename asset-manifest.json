@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.259180e3.chunk.css",
-    "main.js": "/static/js/main.b3e751f9.chunk.js",
-    "main.js.map": "/static/js/main.b3e751f9.chunk.js.map",
+    "main.js": "/static/js/main.82435bbc.chunk.js",
+    "main.js.map": "/static/js/main.82435bbc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a9619a8e.js",
     "runtime-main.js.map": "/static/js/runtime-main.a9619a8e.js.map",
-    "static/js/2.dbe57012.chunk.js": "/static/js/2.dbe57012.chunk.js",
-    "static/js/2.dbe57012.chunk.js.map": "/static/js/2.dbe57012.chunk.js.map",
+    "static/js/2.84a8090e.chunk.js": "/static/js/2.84a8090e.chunk.js",
+    "static/js/2.84a8090e.chunk.js.map": "/static/js/2.84a8090e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c0b19f0753c3c40855b275bad6f9fda7.js": "/precache-manifest.c0b19f0753c3c40855b275bad6f9fda7.js",
+    "precache-manifest.f53c3690510041192b3d81d6a0119f43.js": "/precache-manifest.f53c3690510041192b3d81d6a0119f43.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.259180e3.chunk.css.map": "/static/css/main.259180e3.chunk.css.map",
-    "static/js/2.dbe57012.chunk.js.LICENSE.txt": "/static/js/2.dbe57012.chunk.js.LICENSE.txt",
+    "static/js/2.84a8090e.chunk.js.LICENSE.txt": "/static/js/2.84a8090e.chunk.js.LICENSE.txt",
     "static/media/alphalab-logo.png": "/static/media/alphalab-logo.69fa8eb7.png",
     "static/media/ninjavan-logo.png": "/static/media/ninjavan-logo.6ceda04f.png",
     "static/media/nus-crest.png": "/static/media/nus-crest.de9bd388.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a9619a8e.js",
-    "static/js/2.dbe57012.chunk.js",
+    "static/js/2.84a8090e.chunk.js",
     "static/css/main.259180e3.chunk.css",
-    "static/js/main.b3e751f9.chunk.js"
+    "static/js/main.82435bbc.chunk.js"
   ]
 }
