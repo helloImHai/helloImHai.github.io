@@ -36,7 +36,7 @@ function HNavbar(props) {
             <AppBar position="sticky" color="transparent" elevation={0} >
                 <Toolbar style={{marginLeft: "auto"}}>
                     {
-                        ["about", "experience", "contact"].map((sectionId, key) => {
+                        ["about", "experience", "projects", "contact"].map((sectionId, key) => {
                             return <Box key={`navbar-item-${sectionId}-${key}`} m={3}>
                                 <Link
                                     activeClass="active"

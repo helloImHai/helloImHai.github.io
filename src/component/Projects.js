@@ -13,6 +13,8 @@ import CardMedia from "@material-ui/core/CardMedia";
 import "../Styles/Components/Projects/Projects.css";
 import imgAMA from "../Utils/ama.png";
 import imgFFF from "../Utils/four-five-foe.png";
+import imgSC from "../Utils/sweechat.png";
+import imgPG from "../Utils/peggle.png";
 
 
 const projects = [
@@ -31,23 +33,23 @@ const projects = [
         techStack: ['react', 'firebase', 'psql']
     },
     {
-        pName: "Demon Slayer Peggle",
-        pDesc: "IOS arcade game with in-house physics and game engines. Gameplay is based on Peggle, theme is based on Demon Slayer.",
-        website: "https://helloimhai.github.io/four-five-foe/",
-        img: imgAMA,
-        techStack: ['swift']
-    },
-    {
         pName: "Sweechat",
         pDesc: "End-to-end encrypted IOS messaging app that caters to educational institutions built in 3 shorts sprints.",
-        website: "https://helloimhai.github.io/four-five-foe/",
-        img: imgAMA,
+        website: "https://uvents.nus.edu.sg/event/18th-steps/module/CS3217/project/3",
+        img: imgSC,
         techStack: ['swift', 'firebase', 'authentication']
-    }
+    },
+    {
+        pName: "Demon Slayer Peggle",
+        pDesc: "IOS arcade game with in-house physics and game engines. Gameplay is based on Peggle, theme is based on Demon Slayer.",
+        website: "https://www.youtube.com/watch?v=au8JBMnx56U",
+        img: imgPG,
+        techStack: ['swift']
+    },
 ]
 
 function Projects() {
-    const [projectIndex, setProjectIndex] = useState(3)
+    const [projectIndex, setProjectIndex] = useState(0)
     return (
         <HContainer id="projects">
             <Box marginY="30px">
