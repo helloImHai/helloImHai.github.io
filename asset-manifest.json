@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.259180e3.chunk.css",
-    "main.js": "/static/js/main.82435bbc.chunk.js",
-    "main.js.map": "/static/js/main.82435bbc.chunk.js.map",
+    "main.css": "/static/css/main.0ee6bcd1.chunk.css",
+    "main.js": "/static/js/main.e0c8979f.chunk.js",
+    "main.js.map": "/static/js/main.e0c8979f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a9619a8e.js",
     "runtime-main.js.map": "/static/js/runtime-main.a9619a8e.js.map",
-    "static/js/2.84a8090e.chunk.js": "/static/js/2.84a8090e.chunk.js",
-    "static/js/2.84a8090e.chunk.js.map": "/static/js/2.84a8090e.chunk.js.map",
+    "static/js/2.c19fb40e.chunk.js": "/static/js/2.c19fb40e.chunk.js",
+    "static/js/2.c19fb40e.chunk.js.map": "/static/js/2.c19fb40e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f53c3690510041192b3d81d6a0119f43.js": "/precache-manifest.f53c3690510041192b3d81d6a0119f43.js",
+    "precache-manifest.029ce5bf1bf26bf048630943149a4622.js": "/precache-manifest.029ce5bf1bf26bf048630943149a4622.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.259180e3.chunk.css.map": "/static/css/main.259180e3.chunk.css.map",
-    "static/js/2.84a8090e.chunk.js.LICENSE.txt": "/static/js/2.84a8090e.chunk.js.LICENSE.txt",
+    "static/css/main.0ee6bcd1.chunk.css.map": "/static/css/main.0ee6bcd1.chunk.css.map",
+    "static/js/2.c19fb40e.chunk.js.LICENSE.txt": "/static/js/2.c19fb40e.chunk.js.LICENSE.txt",
     "static/media/alphalab-logo.png": "/static/media/alphalab-logo.69fa8eb7.png",
+    "static/media/ama.png": "/static/media/ama.755ab6b6.png",
+    "static/media/four-five-foe.png": "/static/media/four-five-foe.f227b58a.png",
     "static/media/ninjavan-logo.png": "/static/media/ninjavan-logo.6ceda04f.png",
     "static/media/nus-crest.png": "/static/media/nus-crest.de9bd388.png",
+    "static/media/peggle.png": "/static/media/peggle.b7fea748.png",
     "static/media/profile.png": "/static/media/profile.89b805fc.png",
-    "static/media/shopee-logo.png": "/static/media/shopee-logo.25d408d7.png"
+    "static/media/shopee-logo.png": "/static/media/shopee-logo.25d408d7.png",
+    "static/media/sweechat.png": "/static/media/sweechat.0a9c413e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a9619a8e.js",
-    "static/js/2.84a8090e.chunk.js",
-    "static/css/main.259180e3.chunk.css",
-    "static/js/main.82435bbc.chunk.js"
+    "static/js/2.c19fb40e.chunk.js",
+    "static/css/main.0ee6bcd1.chunk.css",
+    "static/js/main.e0c8979f.chunk.js"
   ]
 }
