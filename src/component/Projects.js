@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { Box, Grid, Typography } from "@material-ui/core";
+import { Box, ButtonBase, Typography, IconButton } from "@material-ui/core";
 import HContainer from "./HContainer"
-import useStyle from "../styling/styling";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { ChevronLeftOutlined, ChevronRightOutlined } from '@material-ui/icons';
 
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -11,61 +9,45 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
 
 import "../Styles/Components/Projects/Projects.css";
-
-import imgPortfolioV1 from "../Utils/portfolioV1.png";
-import imgPortfolioV2 from "../Utils/portfolioV2.png";
-import imgSourceAcad from "../Utils/sourceAcademy.png";
-import imgJokes from "../Utils/jokes.png";
-import imgMusicMaster from "../Utils/musicMaster.png";
-import imgCirbd from "../Utils/cirbd.png";
 import imgAMA from "../Utils/ama.png";
 import imgFFF from "../Utils/four-five-foe.png";
 
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1 // optional, default to 1.
-  }
-};
-
 const projects = [
     {
         pName: "Four Five Foe",
-        pDesc: "Multiplayer tic-tac-toe variant that I played when I was a kid.",
+        pDesc: "Real time online multiplayer game I built based on a tic-tac-toe variant I used to play when I was a kid.",
+        website: "https://helloimhai.github.io/four-five-foe/",
+        img: imgFFF,
+        techStack: ['react', 'express', 'websockets']
     },
     {
         pName: "Ask Hai Anything",
-        pDesc: "A single user Ask Me Anything website! Click to find out more about me.",
+        pDesc: "A single user Ask Me Anything website with working notifications! Ask me questions and find out more about me.",
+        website: "https://helloimhai.github.io/tells-v2/",
+        img: imgAMA,
+        techStack: ['react', 'firebase', 'psql']
     },
     {
         pName: "Demon Slayer Peggle",
-        pDesc: "IOS arcade game with in-house physics and game engines.",
+        pDesc: "IOS arcade game with in-house physics and game engines. Gameplay is based on Peggle, theme is based on Demon Slayer.",
+        website: "https://helloimhai.github.io/four-five-foe/",
+        img: imgAMA,
+        techStack: ['swift']
     },
     {
         pName: "Sweechat",
-        pDesc: "End-to-end encrypted IOS messaging app that caters to educational institutions.",
+        pDesc: "End-to-end encrypted IOS messaging app that caters to educational institutions built in 3 shorts sprints.",
+        website: "https://helloimhai.github.io/four-five-foe/",
+        img: imgAMA,
+        techStack: ['swift', 'firebase', 'authentication']
     }
 ]
 
-function Projects(props) {
-    const [jobIndex, setJobIndex] = useState(3)
-    const {pName, jobTitle, pDesc} = projects[jobIndex]
-    const classes = useStyle()
+function Projects() {
+    const [projectIndex, setProjectIndex] = useState(3)
     return (
         <HContainer id="projects">
             <Box marginY="30px">
@@ -73,118 +55,98 @@ function Projects(props) {
                     featured projects
                 </Typography>
             </Box>
-            <Grid container>
-                <Grid item xs={12} sm={6} md={4}>
-                    <MediaCard
-                        name={"Four Five Foe"}
-                        text={
-                            "Multiplayer tic-tac-toe variant that I played when I was a kid."
-                        }
-                        website={"https://helloimhai.github.io/four-five-foe/"}
-                        code={"https://github.com/helloImHai/four-five-foe/"}
-                        img={imgFFF}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <MediaCard
-                        name={"Four Five Foe"}
-                        text={
-                            "Multiplayer tic-tac-toe variant that I played when I was a kid."
-                        }
-                        website={"https://helloimhai.github.io/four-five-foe/"}
-                        code={"https://github.com/helloImHai/four-five-foe/"}
-                        img={imgFFF}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <MediaCard
-                        name={"Four Five Foe"}
-                        text={
-                            "Multiplayer tic-tac-toe variant that I played when I was a kid."
-                        }
-                        website={"https://helloimhai.github.io/four-five-foe/"}
-                        code={"https://github.com/helloImHai/four-five-foe/"}
-                        img={imgFFF}
-                    />
-                </Grid>
-                <Grid item xs={12} sm={6} md={4}>
-                    <MediaCard
-                        name={"Four Five Foe"}
-                        text={
-                            "Multiplayer tic-tac-toe variant that I played when I was a kid."
-                        }
-                        website={"https://helloimhai.github.io/four-five-foe/"}
-                        code={"https://github.com/helloImHai/four-five-foe/"}
-                        img={imgFFF}
-                    />
-                </Grid>
-            </Grid>
-            <Box m={10}> <p> </p></Box>
+            <Box display="flex" flexDirection="column" >
+                <MediaCard
+                    project={projects[projectIndex]}
+                />
+            </Box>
+            <Box display="flex" justifyContent="center">
+                <IconButton 
+                    color="inherit" 
+                    disabled={projectIndex == 0} 
+                    onClick={() => setProjectIndex(p => p - 1)}> 
+                    <ChevronLeftOutlined/> 
+                </IconButton>
+                {
+                    projects.map((p, index) => (
+                        <ButtonBase disableRipple onClick={() => setProjectIndex(index)}>
+                            <Circle 
+                                backgroundColor={projectIndex == index ? "red" : null}
+                                radius={projectIndex == index ? 10 : 7}
+                            />
+                        </ButtonBase>
+                    ))
+                }
+                <IconButton 
+                    color="inherit" 
+                    disabled={projectIndex == projects.length - 1} 
+                    onClick={() => setProjectIndex(p => p + 1)}> 
+                    <ChevronRightOutlined/> 
+                </IconButton>
+            </Box>
+            <Box m={5}></Box>
         </HContainer>  
     );
 }
 
 const useStyles = makeStyles({
     card: {
-      width: 294,
+      width: "100%",
       margin: "10px",
-      // padding: "3px",
       backgroundColor: "rgb(31, 32, 44)",
-      border: "3px solid rgb(31, 32, 44)",
+      border: "10px solid rgb(31, 32, 44)",
       textColor: "rgb(240, 240, 240)",
     },
     media: {
-      height: 140,
+      height: 350,
       opacity: "80%",
     },
   });
   
 
-function MediaCard({ name, text, website, img, code }) {
+function MediaCard({project}) {
     const classes = useStyles();
-  
+    const { pName, pDesc, website, img, techStack } = project
     return (
       <Card className={classes.card}>
         <CardActionArea href={website} target="_blank">
-          <CardMedia className={classes.media} image={img} title={name} />
+          <CardMedia className={classes.media} image={img} title={pName} />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h5">
-              {name}
+              {pName}
             </Typography>
-            <Typography variant="body2" style={{ color: "rgb(220, 220, 220)" }}>
-              {text}
+            <Typography style={{ color: "rgb(220, 220, 220)" }}>
+              {pDesc}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button
-            size="small"
-            style={{ color: "rgb(124, 217, 233)", paddingLeft: "10px" }}
-            href={website}
-            target="_blank"
-          >
-            Website
-          </Button>
-          {code ? (
-            <Button
-              size="small"
-              style={
-                code
-                  ? { color: "rgb(124, 217, 233)" }
-                  : { color: "rgb(31, 32, 44)" }
-              }
-              disabled={!code}
-              href={code ? code : "/"}
-              target={code ? "_blank" : null}
-            >
-              Code
-            </Button>
-          ) : (
-            ""
-          )}
+            {
+                techStack.map((tech, id) => (
+                    <ButtonBase style={{marginLeft: "15px"}}>
+                        <Typography>
+                            {tech}
+                        </Typography>
+                    </ButtonBase>
+                ))
+            }
         </CardActions>
       </Card>
     );
-  }
+}
+
+function Circle(props) {
+    var circleStyle = {
+        margin:20,
+        display:"inline-block",
+        backgroundColor: props.backgroundColor || "white",
+        borderRadius: "50%",
+        width: props.radius || 7,
+        height: props.radius || 7, 
+      };
+      return (
+        <div style={circleStyle}/>
+      );
+}
 
 export default Projects;
