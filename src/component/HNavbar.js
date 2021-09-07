@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Box, ButtonBase, List, Drawer, Slide, Button, ListItem } from '@material-ui/core';
+import { Box, ButtonBase, List, Drawer, Slide, Button, MenuItem } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 
@@ -77,11 +77,10 @@ function HNavbar(props) {
                         : <>
                             <Button onClick={() => setDrawerOpen(true)}><MenuIcon/></Button>
                             <Drawer anchor="left" classes={{ paper: styles.paper}} open={isDrawerOpen} onClose={() => setDrawerOpen(false)}>
-                                <List>
+                                <Box display="flex" flexDirection="column">
                                     {
                                         ["about", "experience", "projects", "contact"].map((sectionId, key) => {
-                                            return <ListItem>
-                                                <Link
+                                            return <Link
                                                     activeClass="active"
                                                     to={sectionId}
                                                     spy={true}
@@ -91,14 +90,13 @@ function HNavbar(props) {
                                                         margin: 20
                                                     }}
                                                 >
-                                                    <ButtonBase>
+                                                    <MenuItem onClick={() => setDrawerOpen(false)}>
                                                         <Typography>{sectionId}</Typography>
-                                                    </ButtonBase>
+                                                    </MenuItem>
                                                 </Link>
-                                            </ListItem>
                                         })
                                     }
-                                </List>
+                                </Box>
                             </Drawer>
                         </>
                     }
