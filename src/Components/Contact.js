@@ -40,7 +40,7 @@ class Contact extends Component {
                 <FontAwesomeIcon className="icon" icon={faEnvelope} />
               </a>
               <a
-                href={"https://www.instagram.com/hainguyen__/"}
+                href={"https://www.instagram.com/haionpotenuse/"}
                 target={"_blank"}
               >
                 <FontAwesomeIcon className="icon" icon={faInstagram} />

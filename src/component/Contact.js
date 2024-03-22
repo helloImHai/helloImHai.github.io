@@ -48,7 +48,7 @@ export default function Contact() {
                 </a>
                 <a
                 className={classes.icon}
-                href={"https://www.instagram.com/hainguyen__/"}
+                href={"https://www.instagram.com/haionpotenuse/"}
                 target={"_blank"}
                 >
                 <FontAwesomeIcon icon={faInstagram} />
